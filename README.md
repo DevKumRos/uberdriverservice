@@ -33,6 +33,18 @@ To build and deploy your application for the first time, run the following in yo
 ```bash
 sam build
 sam deploy --guided
+
+https://aws-region-value/Prod/enrollments
+Headers:
+Content-Type:application/json
+Accept:application/json
+
+Body:
+{"name" :"Kumar", "password": "test123", "age":12, "licenseNumber": "test1234", "dateOfIssue":"30-08-2020",
+ "validTill": "30-08-2020", "authToDrive": "Valid", "driverName": "TestedDriver", "status": "approved", "registrationNumber": "KA01MC0951",
+"ownerName": "Kumar", "model": "2006", "dateOfRegistration": "30-12-2006", "registrationValidUpTo": "30-12-2021", "seatCapacity": 5
+}
+
 ```
 
 The first command will build the source of your application. The second command will package and deploy your application to AWS, with a series of prompts:
